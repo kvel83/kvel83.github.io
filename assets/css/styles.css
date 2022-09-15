@@ -2,9 +2,12 @@ body{
     font-family: 'roboto',sans-serif;
 }
 .about{
-    background-image: url('/assets/img/about.jpg');
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: left;
-    width: max-content;
+    width:25rem;
+}
+i{
+    --fa-animation-duration:2s;
+    color:tomato;
+}
+.modalImage{
+    width: 30rem;
 }
