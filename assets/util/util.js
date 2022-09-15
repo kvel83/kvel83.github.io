@@ -14,7 +14,8 @@ function proyectDetail(proyectName) {
         modalBodyInput.textContent = "Primer proyecto para bootcamp Desarrollo FullStack JavaScript realizado con HTML, CSS y Bootstrap ";
         modalImage.src="assets/img/cv.png";
         modalImage.className="img-fluid pb-2";
-        modalFooter.children[0].href="https://github.com/kvel83/Ejercicios-Desafio-Latam/tree/main/Proyecto1(CV)";
+        modalFooter.children.repositorio.href="https://github.com/kvel83/Ejercicios-Desafio-Latam/tree/main/Proyecto1(CV)";
+        modalFooter.children.repositorio.target="_blank"
         return false;
       
     }
