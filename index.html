@@ -23,8 +23,39 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col">
-            <!-- INICIO NAVBAR OFFCANVAS -->
-                <nav class="navbar navbar-dark bg-secondary bg-gradient fixed-top">
+                <nav class="navbar navbar-dark bg-gradient bg-secondary fixed-top">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                      <a class="navbar-brand" href="#">Portafolio Katia</a>
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header bg-secondary text-light">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Portafolio de Katia</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item" data-bs-dismiss="offcanvas" >
+                                <a class="nav-link text-muted" href="#" onclick="javascript:closeOffcanvas();">Acerca de mí</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link text-muted" href="#knowledge" onclick="javascript:closeOffcanvas();" >Conocimientos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-muted" onclick="javascript:closeOffcanvas();" href="#projects">Proyectos</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link text-muted" onclick="javascript:closeOffcanvas();" href="#contact">Contacto</a>
+                              </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+            
+                <!-- INICIO NAVBAR OFFCANVAS -->
+                <!-- <nav class="navbar navbar-dark bg-secondary bg-gradient fixed-top">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                             <span class="navbar-toggler-icon"></span>
@@ -37,33 +68,33 @@
                         </div>
                         <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                            <a class="nav-link active text-secondary fw-bold" aria-current="page" href="#">Home</a>
+                            <li class="nav-item" >
+                            <a class="nav-link text-secondary fw-bold" href="#about">Home</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link text-secondary fw-bold" href="#">Acerca de mi</a>
+                            <a class="nav-link text-secondary fw-bold" href="#about">Acerca de mi</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary fw-bold" href="#">Conocimientos</a>
+                                <a class="nav-link text-secondary fw-bold" href="#knowledge">Conocimientos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary fw-bold" href="#">Proyectos</a>
+                                <a class="nav-link text-secondary fw-bold" href="#projects">Proyectos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary fw-bold" href="#">Contacto</a>
+                                <a class="nav-link text-secondary fw-bold" href="#contact">Contacto</a>
                             </li>
                             </ul>
                         </div>
                     </div>
                     </div>
-                </nav>
-   <!-- FIN NAVBAR OFFCANVAS -->
+                </nav> -->
+            <!-- FIN NAVBAR OFFCANVAS -->
             </div>
         </div>
 <!-- ACERCA DE MI SECTION -->
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <img class="rounded-circle mt-5 border border-secondary about" src="assets/img/foto_cv.jpg" alt="imagen katia">
+        <div class="row">
+            <div class="col text-center">
+                <img class="rounded-circle mt-5 img-fluid about" id="about" src="assets/img/foto_cv.jpg" alt="imagen katia">
                 <h1>Acerca de mí</h1>
                 <p> Soy una profesional del área Informática egresada de Análisis de Sistemas del Instituto profesional Esucomex.
                     Madre de un adolescente de 15 años y de una pequeña de 6 años que, luego de una pausa laboral de 6 años, se encuentra actualizando conocimientos realizando un bootcamp en Desafío Latam.
@@ -72,7 +103,7 @@
         </div>
         <!-- ACERCA DE MI END SECTION -->
         <!-- CONOCIMIENTOS SECTION -->
-        <div class="row"> 
+        <div class="row" id="knowledge"> 
         <div class="col-12">
             <h4 class="text-light bg-secondary rounded-pill pt-1 text-center">CONOCIMIENTOS</h4>
             <div class="row text-center">
@@ -103,7 +134,7 @@
         <!-- PROYECTOS SECTION -->
         <div class="row">
             <div class="col-12">
-                <h4 class="text-light bg-secondary rounded-pill pt-1 text-center">PROYECTOS</h4>
+                <h4 class="text-light bg-secondary rounded-pill pt-1 text-center" id="projects">PROYECTOS</h4>
             </div>
             <div class="col-12 col-sm-6 col-lg-4 mt-5 mb-3 home all">
                 <div class="card shadow">
@@ -146,11 +177,11 @@
                 </div>
             </div>
             
-            <!-- Modal Común -->
+            <!-- Modal Común proyectos -->
             <div class="modal fade" id="comunModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="false">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header bg-secondary">
+                        <div class="modal-header bg-secondary text-light">
                             <h5 class="modal-title  text-light" id="exampleModalLabel"></h5>
                             <button type="button" class="btn-close btn-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -171,17 +202,14 @@
         <!-- PROYECTOS END SECTION -->
         <!-- CONTACTO SECTION -->
         <div class="row">
-            <!-- <div class="col-12">
-                <h4 class="text-light bg-secondary rounded-pill pt-1 text-center">CONTACTO</h4>
-            </div> -->
-            <div class="col-12 text-center text-light bg-secondary p-2 rounded">
+            <div class="col-12 text-center text-light bg-secondary p-2 rounded" id="contact">
                 <h4 class="text-light bg-secondary rounded-pill pt-1 text-center">CONTACTO</h4>
                 <form id="register">
                     <input class="form-control mb-2" id="inputName" type="text" placeholder="Nombre" aria-label="inputName">
                     <input type="email" class="form-control" id="userMail" placeholder="Correo Electrónico">
                     <input class="btn btn-secondary align-self-center btn-secondary border border-light btn-lg mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#contactModal" onclick="javascript:validateInput();" type="button" value="Enviar">
                 </form>
-                <!-- Modal Común -->
+                <!-- Modal formulario -->
                 <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="false">
                     <div class="modal-dialog">
                         <div class="modal-content">
