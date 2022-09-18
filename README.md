@@ -11,7 +11,7 @@ También se podrá apreciar el avance de conocimientos obtenidos ya que se tendr
 
 - Currículum Vitae
 
-  ![](/Volumes/Katia/estudios/progrgamacion/Desafio Latam /Full Stack Javascript/proyectos/examen/assets/img/cv.png)
+  ![](assets/img/cv.png)
 
 Pagina desarrollada con HTML, CSS y Bootstrap. Primer desafío del módulo donde debiamos demostrar el manejo de HTML realizando un correcto uso de las etiquetas básicas y semánticas así como el uso de buenas prácticas de 	             programación.
 
