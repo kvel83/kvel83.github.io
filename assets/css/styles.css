@@ -6,7 +6,18 @@ body{
 }
 i{
     --fa-animation-duration:2s;
-    color:tomato;
+}
+.fa-html5{
+    color: tomato;
+}
+.fa-css3-alt{
+    color: #2965f1;
+}
+.fa-bootstrap{
+    color: #563d7c;
+}
+.fa-js{
+    color: #f0db4f;
 }
 .modalImage{
     width: 30rem;
