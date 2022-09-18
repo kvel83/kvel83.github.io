@@ -1,7 +1,5 @@
 /* MODAL DINÁMICO PROYECTOS */
 function proyectDetail(proyectName) {
-    /* var nombre = document.getElementById('inputName');
-    var mail = document.getElementById('userMail'); */
     const modal = document.getElementById('comunModal');
     const modalTitle = modal.querySelector('.modal-title');
     const modalBodyInput = modal.querySelector('.modal-body p');
@@ -72,4 +70,13 @@ function validateInput() {
     }
     modalTitle.textContent = "ENVIO EXITOSO";
     modalBodyInput.textContent = "Gracias por contactarme, te responderé cuanto antes.";
+}
+
+function closeOffcanvas(){
+
+
+    const ofcanvas = document.getElementById('offcanvasNavbar');
+    ofcanvas.hidden;
+
+
 }
