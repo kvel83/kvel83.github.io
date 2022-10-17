@@ -45,6 +45,15 @@ function proyectDetail(proyectName) {
         return false;
 
     };
+    if (proyectName.id=="webchat") {
+        modalTitle.textContent = "Katia Velasquez";
+        modalBodyInput.textContent = "Quinto proyecto para bootcamp Desarrollo FullStack JavaScript realizado con HTML, CSS, Bootstrap y manejo de Flexbox mediante CSS y Javascript.";
+        modalImage.src="assets/img/webchat.png";
+        modalImage.className="img-fluid pb-2";
+        modalFooter.children.repositorio.href="https://github.com/kvel83/webchat";
+        modalFooter.children.repositorio.target="_blank"
+        return false;
+    };
 }
 /*VALIDACIÓN FORMULARIO CONTACTO*/
 function validateInput() {
