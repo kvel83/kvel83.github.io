@@ -4,6 +4,21 @@ body{
 .about{
     width:25rem;
 }
+.projects{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap: 1rem;
+
+}
+#project{
+    width: 100%;
+}
+.card-img-top{
+    height: 300px;
+}
+.card-body{
+    height: 8rem;
+}
 i{
     --fa-animation-duration:2s;
 }
@@ -21,4 +36,8 @@ i{
 }
 .modalImage{
     width: 30rem;
+}
+#register{
+    padding: 2rem;
+
 }

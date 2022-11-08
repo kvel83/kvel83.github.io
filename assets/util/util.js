@@ -5,55 +5,18 @@ function proyectDetail(proyectName) {
     const modalBodyInput = modal.querySelector('.modal-body p');
     const modalImage=modal.querySelector('.modal-body img');
     const modalFooter=modal.querySelector('.modal-footer');
-    if (proyectName.id=="cv") {
-        modalTitle.textContent = "Currículum Vitae";
-        modalBodyInput.textContent = "Primer proyecto para bootcamp Desarrollo FullStack JavaScript realizado con HTML, CSS y Bootstrap aplicando buenas prácticas de codificación y etiquetas semánticas para una correcta interpretación y revisión del código fuente. ";
-        modalImage.src="assets/img/cv.png";
-        modalImage.className="img-fluid pb-2";
-        modalFooter.children.repositorio.href="https://github.com/kvel83/proyectosDesafioLatam/tree/main/Proyecto1(CV)";
-        modalFooter.children.repositorio.target="_blank"
-        return false;
-
-    };
-    if (proyectName.id=="iguana") {
-        modalTitle.textContent = "Iguana Page";
-        modalBodyInput.textContent = "Segundo proyecto para bootcamp Desarrollo FullStack JavaScript realizado con HTML y CSS aplicando conocimientos de posicionamiento utilizando la propiedad display y haciendo uso de clases y modelo de cajas para aplicar los formatos requeridos para cumplir con la maqueta entregada y que se debía replicar.";
-        modalImage.src="assets/img/iguana.png";
-        modalImage.className="img-fluid pb-2";
-        modalFooter.children.repositorio.href="https://github.com/kvel83/proyectosDesafioLatam/tree/main/Proyecto3(Iguana%20Page)";
-        modalFooter.children.repositorio.target="_blank"
-        return false;
-
-    };
-    if (proyectName.id=="cuppon") {
-        modalTitle.textContent = "Cuppon Page";
-        modalBodyInput.textContent = "Tercer proyecto para bootcamp Desarrollo FullStack JavaScript realizado con HTML, CSS y Bootstrap donde la codificación de CSS se redujo al máximo usandose sólo para las propiedades que no se podían manejar con Bootstrap directamente. Se aplica diseño 'Mobile First' haciendo la página totalmente responsiva y se implementa el uso de Modal dinámico y JS para validación de formulario de contacto.";
-        modalImage.src="assets/img/cuppon.png";
-        modalImage.className="img-fluid pb-2";
-        modalFooter.children.repositorio.href="https://github.com/kvel83/proyectosDesafioLatam/tree/main/Proyecto4(Cuppon)";
-        modalFooter.children.repositorio.target="_blank"
-        return false;
-
-    };
-    if (proyectName.id=="plantilla") {
-        modalTitle.textContent = "Katia Velasquez";
-        modalBodyInput.textContent = "Cuarto proyecto para bootcamp Desarrollo FullStack JavaScript realizado con HTML, CSS y Bootstrap realizandose modificaciones a una plantilla pre-existente colocando la información personal requerida, optimizando el uso de Bootstrap y eliminando el uso de estilos in-line existentes en la página. También se realizó el respaldo y versionamiento del trabajo usando GIT+GitHub.";
-        modalImage.src="assets/img/plantilla.jpg";
-        modalImage.className="img-fluid pb-2";
-        modalFooter.children.repositorio.href="https://github.com/kvel83/fdsw-github";
-        modalFooter.children.repositorio.target="_blank"
-        return false;
-
-    };
-    if (proyectName.id=="webchat") {
-        modalTitle.textContent = "Katia Velasquez";
-        modalBodyInput.textContent = "Quinto proyecto para bootcamp Desarrollo FullStack JavaScript realizado con HTML, CSS, Bootstrap y manejo de Flexbox mediante CSS y Javascript.";
-        modalImage.src="assets/img/webchat.png";
-        modalImage.className="img-fluid pb-2";
-        modalFooter.children.repositorio.href="https://github.com/kvel83/webchat";
-        modalFooter.children.repositorio.target="_blank"
-        return false;
-    };
+    //let json=JSON.parse(projects);
+    modalFooter.children.repositorio.target="_blank";
+    for (let index = 0; index < projectItem.length; index++) {
+        if (proyectName.id == projectItem[index].id){
+            modalTitle.textContent = projectItem[index].title;
+            modalBodyInput.textContent = projectItem[index].txt;
+            modalImage.src=projectItem[index].src;
+            modalImage.className="img-fluid pb-2";
+            modalFooter.children.repositorio.href=projectItem[index].repo;
+            break;
+        }
+    }
 }
 /*VALIDACIÓN FORMULARIO CONTACTO*/
 function validateInput() {
@@ -86,3 +49,28 @@ function validateInput() {
     modalTitle.textContent = "ENVIO EXITOSO";
     modalBodyInput.textContent = "Gracias por contactarme, te responderé cuanto antes.";
 };
+
+// /*GENERACION DE PROYECTOS*/
+function projects(){
+    let elem = document.querySelector('#project');
+
+    for (let index = 0; index < projectItem.length; index++) {
+            let clone = elem.cloneNode(true);
+            clone.getElementsByClassName("card-img-top")[0].src = projectItem[index].src;
+            clone.getElementsByClassName("card-title")[0].textContent = projectItem[index].title;
+            clone.getElementsByClassName("card-text")[0].textContent = projectItem[index].shortTxt;
+            clone.getElementsByClassName("btn")[0].id = projectItem[index].id;
+            clone.classList.remove("d-none");
+            elem.after(clone);
+    }
+}
+
+
+
+
+
+
+
+
+
+
