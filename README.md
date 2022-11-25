@@ -29,8 +29,20 @@ Pagina desarrollada con HTML y CSS . Segundo desafío del módulo donde debíamo
 
 Página desarrollada con HTML, CSS y Bootstrap. Tercer desafío del módulo  donde debíamos realizar un uso al máximo de Bootstrap y reducir al mínimo el uso de CSS. En esta página apliqué el modelo "Mobile First" haciendola 	100% responsiva, implementé modales dinámicos y manejé con JS la validación del formulario de contacto y la información mostrada en los modales.
 
-- Página Personal(https://github.com/kvel83/fdsw-github)
+- WebChat(https://github.com/kvel83/webchat)
 
-![](assets/img/plantilla.jpg)
+![](assets/img/webchat.png)
 
-Página desarrollada con HTM, CSS y Bootstrap. Cuarto desafío del módulo donde se buscaba validar los conocimientos de versionamiento y uso de GIT+ GitHub. Además se realizan modificaciones a la plantilla entregada realizando una optimización en el uso de Bootstrap, eliminación de estilos in-line y modificación de la información mostrada.
+Quinto proyecto para bootcamp Desarrollo FullStack JavaScript realizado con HTML, CSS, Bootstrap y manejo de Flexbox mediante CSS y Javascript.
+
+- Kokoro Kawaii Store(https://github.com/kvel83/Responsive-Page-Media-Querys-)
+
+![](assets/img/kokoro.png)
+
+Ejercicio de desarrollo de Layout de tienda utilizando CSS Grid, Flexbox, Media Query para efectos de responsividad de la pagina y Javascript para implementar filtros de búsqueda en menú lateral (en vista mayor a 576px), filtros usando el select de la página y patinador de la página. Tercer desafio del segundo módulo de la carrera de Desarrollo Full Stack JavaScript.
+
+- Tarjeta Dinámica de Producto(https://github.com/kvel83/tarjetaProducto)
+
+![](assets/img/tarjetaProducto.png)
+
+Primer proyecto del módulo III de la carrera FullStack Developer Javascript de Desafío Latam.Se utiliza HTML + Bootstrap para maquinación de la página y Javascript para funcionalidad de cálculo del botón y validación de los inputs Cantidad y Color.
