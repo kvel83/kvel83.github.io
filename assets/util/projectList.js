@@ -1,17 +1,5 @@
 const projectItem = [
     {
-<<<<<<< HEAD
-=======
-        "id":"cv",
-        "src":"assets/img/cv.png",
-        "title":"Currículum Vitae",
-        "shortTxt":"Curriculum Vitae, primer desafío de bootcamp Desarrollo FullStack Javascript",
-        "txt":"Primer proyecto para bootcamp Desarrollo FullStack JavaScript realizado con HTML, CSS y Bootstrap aplicando buenas prácticas de codificación y etiquetas semánticas para una correcta interpretación y revisión del código fuente.",
-        "repo":"https://github.com/kvel83/proyectosDesafioLatam/tree/main/Proyecto1(CV)",
-        "web":"https://kvel83.github.io"
-    },
-    {
->>>>>>> 70950ef03feb8617aa60bc0a89438b02457ee24e
         "id":"iguana",
         "src":"assets/img/iguana.png",
         "title":"Iguana Page",
@@ -56,7 +44,6 @@ const projectItem = [
         "repo":"https://github.com/kvel83/tarjetaProducto",
         "web":"https://kvel83.github.io/tarjetaProducto/"
     },
-<<<<<<< HEAD
     {
         "id":"manejoCondiciones",
         "src":"assets/img/manejoCondiciones.png",
@@ -66,8 +53,6 @@ const projectItem = [
         "repo":"https://github.com/kvel83/condiciones",
         "web":"https://kvel83.github.io/condiciones/"
     }
-=======
->>>>>>> 70950ef03feb8617aa60bc0a89438b02457ee24e
 
 
 ]
