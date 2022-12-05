@@ -14,6 +14,7 @@ function proyectDetail(proyectName) {
             modalImage.src=projectItem[index].src;
             modalImage.className="img-fluid pb-2";
             modalFooter.children.repositorio.href=projectItem[index].repo;
+            modalFooter.children.web.href=projectItem[index].web;
             break;
         }
     }
