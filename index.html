@@ -74,23 +74,23 @@
         <div class="col-12">
             <h4 class="text-light bg-secondary rounded-pill pt-1 text-center">CONOCIMIENTOS</h4>
             <div class="row text-center">
-            <div class="col">
+            <div class="col icon">
                 <i class="fa-brands fa-html5 fa-3x mt-3 mb-2"></i>
                 <p>HTML 5</p>
             </div>
-            <div class="col">
+            <div class="col icon">
                 <i class="fa-brands fa-css3-alt fa-3x mt-3 mb-2"></i>
                 <p>CSS</p>
             </div>
-            <div class="col">
+            <div class="col icon">
                 <i class="fa-brands fa-bootstrap fa-3x mt-3 mb-2"></i>
                 <p>BOOTSTRAP</p>
             </div>
-            <div class="col">
+            <div class="col icon">
                 <i class="fa-solid fa-database fa-3x mt-3 mb-2"></i>
                 <p>SQL</p>
             </div>
-            <div class="col">
+            <div class="col icon">
                 <i class="fa-brands fa-js fa-3x mt-3 mb-2"></i>
                 <p>JAVASCRIPT</p>
             </div>
@@ -129,13 +129,8 @@
                             <p></p>
                         </div>
                         <div class="modal-footer bg-secondary">
-<<<<<<< HEAD
                             <a type="button" class="btn btn-light" target="_blank" id="repositorio">Ir a repositorio GitHub</a>
                             <a type="button" class="btn btn-light" target="_blank" id="web">Ir a proyecto web</a>
-=======
-                            <a type="button" class="btn btn-light" id="repositorio">Ir a repositorio GitHub</a>
-                            <a type="button" class="btn btn-light" id="web">Ir a proyecto web</a>
->>>>>>> 70950ef03feb8617aa60bc0a89438b02457ee24e
                             <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
 
                         </div>
@@ -145,36 +140,38 @@
             <!-- COMUN MODAL END -->
         </div>
         <!-- PROYECTOS END SECTION -->
-        <!-- CONTACTO SECTION -->
+        <!-- CV SECTION -->
         <div class="row">
-            <div class="col text-center text-light  p-2 rounded" id="contact">
+            <div class="col text-center text-light  p-2 rounded" id="CV">
+                <h4 class="text-light bg-secondary rounded-pill pt-1 text-center">CURRICULUM</h4>
+                <a href="https://drive.google.com/file/d/1bW1lh3nnhh2InOsv_fGinRq0N0-VSoqb/view?usp=share_link" download="CV_Katia.pdf" target="_blank"><button class="btn btn-lg btn-outline-secondary mt-3">Ver CV</button></a>
+                </div>
+            </div>
+        <!-- END CV SECTION -->
+        <!-- CONTACT SECTION -->
+        <div class="row">
+            <div class="col-12 text-center text-light  p-2 rounded" id="contact">
                 <h4 class="text-light bg-secondary rounded-pill pt-1 text-center">CONTACTO</h4>
-                <form class="bg-secondary rounded m-4" id="register">
-                    <input class="form-control mb-2" id="inputName" type="text" placeholder="Nombre" aria-label="inputName">
-                    <input type="email" class="form-control mb-2" id="userMail" placeholder="Correo Electrónico">
-                    <textarea class="form-control" id="userMessage" rows="3" placeholder="Ingrese su mensaje"></textarea>
-                    <input class="btn btn-secondary align-self-center btn-secondary border border-light btn-lg mt-3 mb-3" data-bs-toggle="modal" data-bs-target="#contactModal" onclick="javascript:validateInput();" type="button" value="Enviar">
-                </form>
-                <!-- Modal formulario -->
-                <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="false">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header bg-secondary">
-                                <h5 class="modal-title  text-light" id="contactModalLabel"></h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body text-muted">
-                                <p></p>
-                            </div>
-                            <div class="modal-footer bg-secondary">
-                                <button type="button" class="btn btn-secondary border border-light" data-bs-dismiss="modal">Cerrar</button>
-                            </div>
-                        </div>
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="https://www.linkedin.com/in/katiavelasquez" target="_blank">
+                            <i class="fa-brands fa-linkedin-in fa-3x icon" id="linkedin"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://github.com/kvel83" target="_blank">
+                            <i class="fa-brands fa-github fa-3x icon" id="github"></i>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://api.whatsapp.com/send?phone=56945552433&text=Hola,%20gracias%20por%20contactarme,%20apenas%20este%20disponible%20responder%C3%A9%20tu%20mensaje,%20si%20es%20urgente%20por%20favor%20no%20dudes%20en%20llamarme." target="_blank">
+                            <i class="fa-brands fa-whatsapp fa-3x icon" id="whatsapp"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- END CONTACTO SECTION -->
+        <!-- END CONTACT SECTION -->
         <!-- FOOTER SECTION -->
         <footer>
             <footer class="bg-gradient bg-secondary text-center text-light mt-5 p-4 rounded">

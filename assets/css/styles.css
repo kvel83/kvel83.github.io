@@ -7,9 +7,6 @@ body{
 #project{
     width: 100%;
 }
-i{
-    --fa-animation-duration:2s;
-}
 .fa-html5{
     color: tomato;
 }
@@ -28,6 +25,27 @@ i{
 #register{
     padding: 2rem;
 
+}
+.icon > p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+.icon{
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
+}
+.icon:hover{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+#linkedin{
+    color:#0072b1;
+}
+#github{
+    color:#333;
+}
+#whatsapp{
+    color:#25D366;
 }
 @media(min-width:576px){
     .projects{
